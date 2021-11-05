@@ -1,13 +1,14 @@
 import { Category } from '../model/Category'
 import { ICategoriesRepository, ICreateCategoryDTO } from './ICategoriesRepository'
 
-export class CategoriesRepository implements ICategoriesRepository {
+export class PostgresCategoriesRepository implements ICategoriesRepository {
   private categories: Category[]
 
+  
   constructor () {
     this.categories = []
   }
-
+  
   create ({ name, description }: ICreateCategoryDTO) {
     const category = new Category()
 
