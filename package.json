@@ -4,7 +4,8 @@
   "main": "src/server.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "lint": "yarn prettier --write ."
   },
   "dependencies": {
     "@types/morgan": "^1.9.3",
