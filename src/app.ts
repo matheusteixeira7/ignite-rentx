@@ -3,7 +3,7 @@ import morgan from 'morgan'
 import swaggerUi from 'swagger-ui-express'
 import swaggerFile from './swagger.json'
 import { categoriesRoutes } from './routes/categories.routes'
-import { specificationsRoutes } from './routes/specificationsRoutes'
+import { specificationsRoutes } from './routes/specifications.routes'
 export const app = express()
 
 // Middlewares
