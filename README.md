@@ -50,7 +50,7 @@
 - O usuário deve poder cadastrar mais de uma imagem para o - mesmo carro
 - O usuário responsável pelo cadastro deve ser um usuário - administrador.
 
-# Alugel de carro
+# Aluguel de carro
 
 **RF**
 
