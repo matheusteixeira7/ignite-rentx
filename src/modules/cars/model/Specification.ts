@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 export class Specification {
   id?: string
-  name: string
+  specificationName: string
   description: string
   createdAt: Date
 
