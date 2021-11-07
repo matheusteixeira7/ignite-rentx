@@ -41,6 +41,8 @@
 # Icon must end with two \r
 Icon
 
+# Temporary Files
+tmp/**
 
 # Thumbnails
 ._*
