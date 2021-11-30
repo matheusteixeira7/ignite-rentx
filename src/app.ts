@@ -3,6 +3,7 @@ export const app = express()
 import swaggerUi from 'swagger-ui-express'
 import swaggerDocument from './swagger.json'
 import morgan from 'morgan'
+import './database'
 import { router } from './routes'
 
 // Middlewares
