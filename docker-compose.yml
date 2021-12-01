@@ -1,24 +1,33 @@
 version: '3.7'
 
 services:
-  database_ignite:
+  database:
     image: postgres
     container_name: database_ignite
     restart: always
+    ports:
+      - 5432:5432
     environment:
       - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=1234
+      - POSTGRES_PASSWORD=ignite
       - POSTGRES_DB=rentx
     volumes:
       - pgdata:/data/postgres
-    network_mode: host
 
   app:
     build: .
     container_name: rentx
+    restart: always
+    ports: 
+      - 3000:3000
+      - 9229:9229 #Você pode inserir essa porta tbm pra poder usar o debug
     volumes:
       - .:/usr/app
-    network_mode: host
+    links: 
+      - database
+    depends_on:
+      - database
 
 volumes:
   pgdata:
+    driver: local
