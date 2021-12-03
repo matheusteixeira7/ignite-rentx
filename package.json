@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "lint": "yarn prettier --write ."
+    "lint": "yarn prettier --write .",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   },
   "dependencies": {
     "@types/morgan": "^1.9.3",
